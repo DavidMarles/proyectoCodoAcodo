@@ -1,0 +1,85 @@
+body{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+img{
+    width: 20%;
+    margin: 3% 0% 0% 40%
+    
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    padding-left: 15%;
+    width: 60%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.botones{
+    display: flex;
+    width: 100%;
+    flex-direction:row-reverse;
+    align-items: center;
+    justify-content:center;
+    gap: 10%;
+}
+
+.aceptar{
+    flex: 1;
+    width: 100%;
+    background-color: #089130;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    padding: 0.1% 0.5% 0.1% 0.5%;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #058129;
+    transition: 5s background-color width;
+}
+
+.aceptar:hover{
+    width: 110%;
+    background-color: #AFFF33;
+    cursor: pointer;
+    
+}
+
+.rechazar{
+    width: 100%;
+    background-color: #965C07;
+    color: white;
+    font-size: 1.6em;
+    text-align: center;
+    padding: 0.1% 0.5% 0.1% 0.5%;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #845509;
+    transition: 1s background-color;
+}
+
+.rechazar:hover{
+    background-color: #B31111;
+}
+
+
+
+@media (max-width: 768px){
+
+.botones{
+    flex-wrap:wrap;
+}
+
+}
+

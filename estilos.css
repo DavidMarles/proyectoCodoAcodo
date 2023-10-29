@@ -1,0 +1,591 @@
+/*configuración general*/
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    border: 0;
+    overflow-x: hidden;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    background-color:#EBE5E5;
+    margin-top: 0%;
+}
+
+/*Encabezado*/
+
+.cabecera{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0%;
+    border-bottom-style: solid;
+    border-color: #C0C0C0;
+    padding-bottom: 0.3%;
+    width: 100%;
+    box-shadow: inset -1px -1px 20px #C0C0C0;
+}
+
+.menu{  
+    
+    display: flex;
+    flex-direction: row;
+    float: right;
+    list-style-type: none;
+    white-space: nowrap;
+    width: 97.5%;
+    margin-top: 0%;
+    justify-content: end;
+    box-shadow: inset -1px -1px 20px #C0C0C0;
+}
+
+.itMenu{
+    margin: 0.2% 1% 0.2% 0;
+    white-space: nowrap;
+    font-size: 1.5em;
+    border-color: #008000;
+    border-width: 1px;
+    border-style: none;
+    padding: 0.3% 1.4%;
+    box-shadow: inset 0px 0px 10px #B8860B;
+}
+
+.liMenu{
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #0E6655;
+    font-weight: bold;
+    }
+
+.logo{
+    display:flex;
+    justify-content: center;
+    width: 20%;
+    margin: 0 auto;
+}
+
+.imgLogo{
+    width: 100%;
+    text-align: center;
+}
+
+/*Animación*/
+
+.imgLogo{
+    animation: mi-animacion 2s linear infinite;
+  }
+  
+  @keyframes mi-animacion {
+    0% {
+      transform: scale(1);
+    }
+    10% {
+      transform: scale(1.05);
+    }
+    
+  }
+  
+
+/*Contenido central*/
+
+.desdeDonde{
+    font-size: 100%;
+    font-weight: 400;
+    
+}
+
+/* Estilos opcionales para el formulario */
+.usuario {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    align-items: center;
+    font-size: 100%;
+    font-weight: 400;
+    color: #0E6655;
+    text-shadow: 0px 0px 20px #839192;
+    box-shadow: inset -1px -1px 20px #C0C0C0;
+    margin:10% 3%;
+    padding: 2% 3% 3% 3%;
+    width: 15%;
+}
+
+.contactos {
+    display: flex;
+    flex-direction: column;
+    align-self:flex-end;
+    align-items: center;
+    margin-top: 20%;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    text-align: center;
+}
+
+.nombre, .email{
+    padding-top: 1%;
+    margin-top: 5%;
+    
+}
+
+.enviar{
+    margin-top: 20%;
+    background-color: #0f9076;
+    border-radius: 100%;
+    color: #C0C0C0;
+    width: 130%;
+    align-self: center;
+    font-size: 150%;
+    border-style: none;
+    box-shadow: -1px -1px 10px #0E6655;
+}
+
+.observacion{
+    resize: none;
+}
+
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    margin: -55% 0% 0% 2%;
+    width: 60%;
+}
+
+.titulo{
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    color: #0E6655;
+    text-shadow: 0px 0px 20px #839192;
+}
+
+.presentacion{
+    width: 95%;
+    text-align: center;
+    padding-left: 1%;
+    padding-right: 1%;
+    align-self: center;
+    font-size: 1.5em;
+    background: radial-gradient(circle, #839192, #EBE5E5);
+    text-shadow: 0px 0px 10px #0E6655;
+}
+
+/*Sección de contactos, lado Izquierdo*/
+
+
+
+.subtitulo{
+    text-align: center;
+    width: 100%;
+    color: #0E6655;
+    text-shadow: 0px 0px 20px #839192;
+}
+
+.whatsAppImg {
+    width: 90%;
+    text-align: center;
+}
+
+.facebookImg{
+    width: 90%;
+    text-align: center;
+}
+
+.youtubeImg{
+    width: 90%;
+    text-align: center;
+}
+
+.whatsAppLogo{
+    width: 30%;
+    margin: 0%;
+}
+
+.facebookLogo{
+    width: 33%;
+}
+
+.youtubeLogo{
+    width: 34%;
+}
+
+.whatsAppP {
+    width: 100%;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/*sección video*/
+
+.video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 15%;
+}
+
+.subtituloVideo{
+    text-align: center;
+    width: 100%;
+    color: #0E6655;
+    text-shadow: 0px 0px 20px #839192;
+}
+
+.videoPresentacion{
+    text-align: center;
+    box-shadow: 5px 5px 5px 10px #9b9b9b;
+}
+
+.invitacion{
+    text-align: center;
+    width: 100%;
+    margin: 3% auto;
+    color: #0E6655;
+    text-shadow: 0px 0px 20px #839192;
+}
+
+/*sección footer*/
+
+footer{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: black;
+    width: 100%;
+    padding: 1.5% 0% 1.5% 0%;
+}
+
+.derechos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5% 0% 0% 0%;
+}
+
+.licencia{
+    color: white;
+    text-align: center;
+    margin-bottom: 1%;
+    color: white;
+}
+
+.autor{
+    color: white;
+    text-align: center;
+    margin-bottom: 1%;
+    color: white;
+    font-size: 90%;
+}
+
+.logosLic{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.logLicencia{
+    width: 10%;
+    margin-left: 1%;
+    text-decoration: none;
+    text-align: center;
+}
+
+.urlFooter{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5% 0% 0% 0%;
+}
+
+.legal{
+    text-align: center;
+    color: white;
+    font-size: 80%;
+    line-height: 200%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+.cabecera{
+    width: 100%;
+    margin: auto;
+    padding: 0%;
+}
+
+.menu{
+    font-size: 50%;
+    width: 96%;
+}
+
+.enviar, .subtitulo{
+    width: 100%;
+    font-size: 90%;
+}
+
+.whatsAppLogo, .facebookLogo, .youtubeLogo{
+    width: 50%;
+}
+
+.whatsAppP{
+    display: none;
+}
+ 
+.contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: -70% 0% 0% 0%;
+    width: 60%;
+    font-size: 80%;
+}
+
+.video{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    width: 80%;
+    margin: 10% 0% 0% -0.5%;
+}
+
+footer{
+    font-size: 70%;
+}
+
+}
+
+
+@media (max-width: 767px) {
+
+.subtituloVideo, .invitacion, .presentacion, .titulo{
+    font-size: 100%;
+}
+
+/*Sección Cabecera*/
+
+.cabecera{
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+    padding: 5% 0% 5% 5%;
+    margin-left: -2%;
+    background: radial-gradient(at center center, #EBE5E5 10%, #EBE5E5 10%, #839192 150%, #839192 0%);
+    border: none;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-self: end-start;
+    width: 30%;
+    font-size: 80%;
+    margin: 0% 10% 0% 5%;
+    box-shadow: none;
+}
+
+.itMenu{
+    margin-left: -18%;
+    padding: 3% 7%;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    font-size: 100%;
+}
+
+
+.imgLogo{
+    width: 150%;
+    margin-right: 50%;
+    
+}
+
+/*sección contenido central*/
+
+.contenido{
+    align-self: flex-start;
+    width: 50%;
+    font-size: 80%;
+    margin-top: -75%;
+}
+
+/*Sección Contáctos*/
+
+.usuario{
+    margin-top: 7%;
+    width: 20%;
+}
+
+.formulario{
+    font-size: 60%;
+    margin-top: 0%;
+    
+}
+.nombre, .email, .observacion{
+    padding: 3%;
+    margin: 2%;
+}
+
+.enviar{
+    font-size: 150%;
+    width: 60%;
+}
+
+.whatsAppP, #contac{
+    display: none;
+}
+
+.contactos {
+    display:flex;
+    flex-direction: row;
+    width: 90%;
+    margin-top: 50%;
+}
+
+.whatsAppImg {
+    /*width: 50%;*/
+    text-align: center;
+    order: 2;
+    margin-top: -40%;
+}
+
+.facebookImg{
+    /*width: 50%;*/
+    text-align: center;
+    margin-left: 0%;
+    order: 3;
+    margin-top: -40%;
+}
+
+.youtubeImg{
+   /* width: 50%;*/
+    text-align: center;
+    order: 1;
+    margin-top: -40%;
+}
+    
+.whatsAppLogo{
+    width: 100%;
+}
+    
+.facebookLogo {
+    width: 100%;
+}
+    
+.youtubeLogo {
+    width: 100%;
+}
+
+/*Sección video*/    
+
+.video{
+    align-items: flex-start;
+    margin-top: 5%;
+}
+
+.videoPresentacion{
+    margin-left: 10%;
+    width: 30%;
+    height: 100%;
+}
+.subtituloVideo, .invitacion{
+    display: none;
+}  
+
+/*sección footer*/    
+    
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 80%;
+}
+
+}
+
+
+@media (max-width: 500px) {
+
+html{
+    font-size: 68%;
+}
+
+.itMenu{
+    font-size: 80%;
+}
+
+/*sección contenido central*/
+
+.contenido{
+    width: 98%;
+    margin-top: -230%;
+   
+}
+
+.usuario{
+    margin-top: 100%;
+    align-self: center;
+    width: 80%;
+}
+
+.enviar{
+    font-size: 200%;
+}
+
+/*Sección Contáctos*/
+
+.contactos{
+    align-self: center;
+    margin-top: 80%;
+}
+
+.whatsAppImg {
+    margin-top: -99%;
+}
+
+.facebookImg{
+    margin-top: -99%;
+}
+
+.youtubeImg{
+    margin-top: -99%;
+}
+
+
+/*Sección video*/    
+    
+  
+.video{
+    
+    width: 99%;
+    margin: 10% 0% 0% 2.5%;   
+}
+
+.videoPresentacion{
+    width: 60%;
+    height: 100%;
+    align-self: center;
+    margin-left: 2%;
+}
+
+footer{
+    margin-top: 200%;
+}
+}
